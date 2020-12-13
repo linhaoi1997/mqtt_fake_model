@@ -1,0 +1,15 @@
+#url: https://iiot-dev.teletraan.io/graphql/
+url: https://seely-test.teletraan.io/graphql/
+#account: test@teletraan.io
+#password: '15700000000'
+
+admin:
+  account: test@sina.com
+  password: "12345678"
+
+
+db:
+  - 'postgres'
+  - 'postgres'
+  - '192.168.1.5'
+  - '5432'
