@@ -1,0 +1,61 @@
+url: http://192.168.1.5:8200/graphql/
+#platform_url: http://192.168.1.5:8200/graphql/
+#url: https://test.teletraan.io/app/eam/graphql/
+
+
+db:
+  - 'postgres'
+  - 'postgres'
+  - '192.168.1.5'
+  - '5432'
+
+db_list:
+  - 'tpmain-test'
+
+users:
+  admin_user:
+    login:
+      account: 'admin'
+      passpord: 'teletraan'
+
+  qunsheng_admin_user:
+    login:
+      account: 'qunsheng'
+      passpord: 'qunsheng'
+
+  cnc_admin_user:
+    login:
+      account: 'linyii'
+      passpord: 'teletraan'
+
+  # 企业普通员工
+  qunsheng_normal_user:
+    login:
+      account: 'simple_qunsheng_1'
+      passpord: 'BAFnHgJJIitT'
+
+  # 用于测试eam权限的人员
+  report_user:
+    login:
+      account: 'faqiren'
+      passpord: '123456'
+
+  audit_user:
+    login:
+      account: 'shenheren'
+      passpord: '123456'
+
+  feed_back_user:
+    login:
+      account: 'fankuiren'
+      passpord: '123456'
+
+  other_user:
+    login:
+      account: 'chakanren'
+      passpord: '123456'
+
+  see_all_user:
+    login:
+      account: 'seeall'
+      passpord: '123456'
