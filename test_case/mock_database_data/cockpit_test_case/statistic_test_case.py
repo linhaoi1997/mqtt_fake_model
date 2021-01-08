@@ -1,4 +1,5 @@
-from mock_database_data.cockpit_test_case.mock_data import test2 as test, return_data2 as return_data, _delete
+from test_case.mock_database_data.cockpit_test_case import test2 as test, return_data2 as return_data
+
 
 # _delete.delete_thing_report()
 

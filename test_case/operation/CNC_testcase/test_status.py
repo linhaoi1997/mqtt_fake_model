@@ -1,5 +1,5 @@
-from operation.CNC_testcase.cnc_equipments import cnc_5, all_cnc
-from support.moc.equipment.cnc_equipment import CncStatus, CncAlarm
+from test_case.operation import cnc_5, all_cnc
+from support.moc.equipment.cnc_equipment import CncStatus
 
 
 class TestStatus:

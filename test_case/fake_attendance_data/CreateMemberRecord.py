@@ -1,4 +1,4 @@
-from fake_attendance_data.BaseDataMaker import BaseDataMaker
+from test_case.fake_attendance_data import BaseDataMaker
 from support.graphql_tools.find_schema_path import find_schema
 import datetime
 import pytz

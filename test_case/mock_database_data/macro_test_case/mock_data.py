@@ -1,7 +1,7 @@
 from support.moc.mock_database import MockDatabase
 from support.moc.delete import CockpitDelete
 import json
-from mock_database_data.find_id import find_company_id, find_type_id
+from test_case.mock_database_data.find_id import find_company_id, find_type_id
 
 database = "cockpit-test"
 

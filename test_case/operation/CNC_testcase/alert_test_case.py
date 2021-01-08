@@ -1,4 +1,4 @@
-from operation.CNC_testcase.cnc_equipments import cnc_1, cnc_2
+from test_case.operation import cnc_1, cnc_2
 from support.moc.equipment.cnc_equipment import CncStatus, CncAlarm
 import datetime
 

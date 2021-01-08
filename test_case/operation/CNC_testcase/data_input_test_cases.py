@@ -1,4 +1,4 @@
-from operation.CNC_testcase.cnc_equipments import cnc_5
+from test_case.operation.CNC_testcase.cnc_equipments import cnc_5
 import datetime
 import pytest
 
@@ -67,3 +67,6 @@ class TestDataInput:
 if __name__ == '__main__':
     # TestDataInput().test_1()
     pytest.main([__file__])
+    # assert cnc_5.query_production(_start_date, "test1") == 1620
+    # assert cnc_5.query_production(_start_date, "test2") == 1440
+    # assert cnc_5.query_production(_start_date, "test3") == 720

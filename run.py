@@ -1,8 +1,8 @@
-from operation.gh_testcase.gh_equipments import gh_001, gh_002, gh_003, gh_004
-from operation.CNC_testcase.cnc_equipments import cnc_1, cnc_2, cnc_3, cnc_4
-from operation.fj_testcase.fj_equipments import fj_001, fj_002, fj_003, fj_004
-from operation.qs_testcase.qs_equipments import qs_001, qs_002
-from operation.ay_testcase.aoya_equipments import app
+from test_case.operation import gh_001, gh_002, gh_003, gh_004
+from test_case.operation import cnc_1, cnc_2, cnc_3, cnc_4
+from test_case.operation import fj_001, fj_002, fj_003, fj_004
+from test_case.operation import qs_001, qs_002
+from test_case.operation import app
 import threading
 from support.moc.equipment.equipment import Equipments
 

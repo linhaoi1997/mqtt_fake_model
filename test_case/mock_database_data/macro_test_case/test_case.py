@@ -1,5 +1,5 @@
-import mock_database_data.macro_test_case.mock_data as m
-from mock_database_data.macro_test_case.mock_data import test
+import test_case.mock_database_data.macro_test_case.mock_data as m
+from test_case.mock_database_data.macro_test_case import test
 return_data = m.return_data
 
 

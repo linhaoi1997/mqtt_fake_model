@@ -1,4 +1,4 @@
-from operation.gh_testcase.gh_equipments import all_gh, gh_004
+from test_case.operation import all_gh, gh_004
 
 
 class TestStatus:

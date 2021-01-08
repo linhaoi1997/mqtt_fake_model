@@ -1,6 +1,6 @@
 from support.moc.equipment.ay_equipment import AyEquipment, AyEquipments
-from flask import Flask, jsonify, request
-from operation.ay_testcase.aoya_configs import rules, rules2
+from flask import Flask, jsonify
+from test_case.operation import rules, rules2
 
 company_id = 5
 
