@@ -70,6 +70,12 @@ def execute_now_mission():
     ssh_execute("thing-day-report", now)
 
 
+def execute_all_mission(start, end):
+    trigger_timing_mask("thing-hour-report", start, end)
+    trigger_timing_mask("thing-day-report", start, end)
+    trigger_timing_mask("input-record", start, end)
+
+
 class Equipment(object):
     def __init__(self, thing_id, company_id, host, topic, _format, config=None, rules=None):
         self.thing_id = thing_id
@@ -171,4 +177,9 @@ class Equipments(object):
 
 
 if __name__ == '__main__':
-    execute_now_mission()
+    _start_date = '2021-01-05 00:00:00'
+    _end_date = '2021-01-06 00:00:00'
+    # trigger_timing_mask("alerts-task", _start_date, _end_date)
+    trigger_timing_mask("thing-hour-report", _start_date, _end_date)
+    trigger_timing_mask("thing-day-report", _start_date, _end_date)
+    trigger_timing_mask("input-record", _start_date, _end_date)

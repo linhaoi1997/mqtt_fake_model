@@ -1,5 +1,6 @@
 from support.moc.equipment.equipment import Equipment
 from support.moc._format import *
+from support.moc.mock_database import PostgresConn
 import datetime
 
 
@@ -86,3 +87,10 @@ class CncEquipment(Equipment):
         self.public_time_slot(start, end, time_step=10)
         if is_trigger:
             self.trigger_all_timing_mask(start, end)
+
+    def query_production(self, time_str, product_name):
+        conn = PostgresConn()
+        query_str = "select production from thing_input_data_record " \
+                    "where thing_id = {thing_id} and timestamp = '{time_str}' and product_name = '{product_name}'" \
+            .format(thing_id=self.thing_id, time_str=time_str, product_name=product_name)
+        return conn.query(query_str)[0][0]

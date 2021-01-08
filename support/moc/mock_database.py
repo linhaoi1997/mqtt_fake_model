@@ -30,10 +30,8 @@ class PostgresConn(object):
         self.cursor.execute(update)
         self.conn.commit()
 
-    def __del__(self):
-        self.conn.commit()
+    def close(self):
         self.conn.close()
-        print(self.database + ' close')
 
 
 class MockDatabase(object):
